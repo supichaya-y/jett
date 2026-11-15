@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f3f8;
+    color: #293448;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+header,
+main,
+footer {
+    width: 92%;
+    max-width: 960px;
+    margin: auto;
+}
+
+header {
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+a {
+    color: #355fa0;
+    text-underline-offset: 4px;
+}
+
+a:hover {
+    color: #203c6a;
+}
+
+a:focus-visible {
+    outline: 3px solid #6b8fc7;
+    outline-offset: 4px;
+}
+
+main {
+    background-color: white;
+    padding: 40px;
+    border: 1px solid #dbe2ed;
+    border-radius: 12px;
+}
+
+h1 {
+    margin: 8px 0 14px;
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+h2 {
+    margin: 0 0 18px;
+    padding-left: 12px;
+    border-left: 4px solid #587db8;
+    font-size: 23px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+section {
+    margin-top: 34px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dbe2ed;
+    margin: 30px 0;
+}
+
+.small-title {
+    color: #607494;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.profile-picture {
+    width: 230px;
+    vertical-align: middle;
+}
+
+.profile-image {
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info {
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 9px 22px;
+    border-radius: 6px;
+    background-color: #355fa0;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #284a7f;
+    color: white;
+}
+
+.education-list {
+    padding-left: 24px;
+}
+
+.education-list li {
+    margin-bottom: 12px;
+}
+
+.experience-table,
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 10px;
+    color: #60708a;
+    font-size: 13px;
+}
+
+.experience-table th,
+.skills-table th {
+    background-color: #eaf0f8;
+}
+
+.experience-table th,
+.experience-table td,
+.skills-table th,
+.skills-table td {
+    border: 1px solid #dbe2ed;
+    padding: 12px 14px;
+}
+
+.experience-table td:first-child {
+    width: 25%;
+}
+
+.skills-table {
+    min-width: 600px;
+}
+
+.stars {
+    color: #8b6514;
+    white-space: nowrap;
+    letter-spacing: 1px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.contact-page {
+    max-width: 720px;
+}
+
+.contact-list {
+    padding-left: 26px;
+}
+
+.contact-list li {
+    position: relative;
+    width: 90%;
+    border: 1px solid #355fa0;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-list li::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -48px;
+    right: 12px;
+    background: url("cat.png") center / contain no-repeat;
+    pointer-events: none;
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+    font-size: 13px;
+    color: #60708a;
+}
+
+@media (max-width: 650px) {
+    main {
+        padding: 24px 18px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .profile-table,
+    .profile-table tbody,
+    .profile-table tr,
+    .profile-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .profile-info {
+        padding: 20px 0 0;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+
+body {
+    background-color: #f0f5ff;
+    background-image: radial-gradient(
+        circle,
+        #c6d5ee 1.5px,
+        transparent 1.5px
+    );
+    background-size: 24px 24px;
+}
+
+main {
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(53, 95, 160, 0.1);
+}
+
+.button {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(53, 95, 160, 0.2);
+}
+
+.skills-table tbody tr:hover,
+.experience-table tbody tr:hover {
+    background-color: #eef4ff;
+}
